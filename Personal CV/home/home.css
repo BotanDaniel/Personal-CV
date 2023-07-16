@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Work+Sans:wght@400;800&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+  list-style: none;
+}
+
+body {
+  background-color: #18181b;
+  width: 99vw;
+  height: 98vh;
+  overflow: hidden;
+
+  display: flex;
+}
+
+/* NAVIGATION BAR */
+ul > li {
+  padding: 1.5rem;
+  font-size: 1.3rem;
+}
+
+ul li i {
+  background-color: #333338;
+  padding: 13px;
+  border-radius: 20%;
+}
+
+ul li i:hover {
+  background-color: #525256;
+  cursor: pointer;
+}
+.navigation-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+/* LEFT CONTAINER */
+.about-wrapper {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-container {
+  width: 500px;
+  height: auto;
+  text-align: center;
+}
+
+.about-container img {
+  border-radius: 50%;
+}
+.my-description {
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.my-description span {
+  color: #ef4444;
+}
+
+.secondary-description {
+  color: #949aa5;
+  font-size: 1.3rem;
+}
