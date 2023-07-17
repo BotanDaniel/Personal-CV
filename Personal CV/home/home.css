@@ -18,7 +18,7 @@ body {
 /* NAVIGATION BAR */
 ul > li {
   padding: 1.5rem;
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
 }
 
 ul li i {
@@ -41,7 +41,7 @@ ul li i:hover {
 /* LEFT CONTAINER */
 .about-wrapper {
   height: 100%;
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@ ul li i:hover {
 }
 .my-description {
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: clamp(1.4rem, 2.5vw, 3rem);
 }
 
 .my-description span {
@@ -66,5 +66,40 @@ ul li i:hover {
 
 .secondary-description {
   color: #949aa5;
-  font-size: 1.3rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+}
+
+/* Main projects section */
+.projects-wrapper {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: stretch;
+}
+
+.projects-wrapper img {
+  overflow: auto;
+}
+
+/* media queries */
+@media (max-width: 720px) {
+  body {
+    flex-direction: column;
+    overflow: visible;
+    width: 100%;
+  }
+
+  .about-wrapper {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects-wrapper img {
+    width: 180px;
+    height: 200px;
+  }
 }
