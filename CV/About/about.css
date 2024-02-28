@@ -8,13 +8,42 @@
 }
 
 body {
+  background-color: #18181b;
   height: 95vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .about-container {
+  width: fit-content;
+  height: 500px;
+  margin-bottom: 40px;
+}
+
+.skills-container {
   display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.skill-item {
+  padding: 20px;
+}
+
+.skill-item i {
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
 }
