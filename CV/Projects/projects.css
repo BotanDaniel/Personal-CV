@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800;900&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  color: #fff;
+}
+
+body {
+  background-color: #18181b;
+  height: 95vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px;
+}
+
+nav ul li {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  padding: 18px;
+}
+
+nav ul li i {
+  font-size: 24px;
+}
+
+nav ul li i:hover {
+  color: #b3acac;
+}
+
+.sunMoon:hover {
+  cursor: pointer;
+}
+
+h1 {
+  color: #fff;
+}
+
+.project-item {
+  width: 600px;
+  height: 225px;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-right: 17px;
+}
+
+.project-text h6 {
+  font-size: clamp(1.1rem, 2.5vw, 2rem);
+}
+
+.technologies-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.technologies-list i {
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  padding: 10px;
+}
+
+.image-side {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}

@@ -46,7 +46,7 @@ nav ul li i:hover {
   color: #b3acac;
 }
 
-nav ul li i:hover:nth-child(4) {
+.sunMoon:hover {
   cursor: pointer;
 }
 
