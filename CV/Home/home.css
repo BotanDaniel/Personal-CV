@@ -82,7 +82,28 @@ nav ul li i:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  nav {
+  nav ul {
+    display: none;
+  }
+
+  nav i {
+    font-size: 25px;
+    margin: 30px 0px 0px 30px;
+  }
+
+  nav button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  nav button {
     display: none;
   }
 }

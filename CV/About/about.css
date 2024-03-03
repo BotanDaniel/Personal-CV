@@ -64,13 +64,6 @@ nav ul li i:hover {
 }
 
 .skills-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-}
-
-.skills-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
