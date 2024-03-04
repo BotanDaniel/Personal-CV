@@ -81,6 +81,33 @@ nav ul li i:hover {
   color: red;
 }
 
+/* OFFCANVAS CODE */
+.btn-close {
+  background-color: #fff;
+}
+
+.offcanvas {
+  background-color: #18181b;
+}
+
+.offcanvas-body {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+}
+
+.offcanvas-body i {
+  padding: 25px;
+  font-size: 25px;
+}
+
+.offcanvas-body a {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+/* OFFCANVAS CODE  */
+
 @media only screen and (max-width: 600px) {
   nav ul {
     display: none;
@@ -91,7 +118,10 @@ nav ul li i:hover {
     margin: 30px 0px 0px 30px;
   }
 
-  nav button {
+  .responsive-button {
+    position: fixed;
+    top: 25px;
+    left: 25px;
     background: none;
     color: inherit;
     border: none;
@@ -99,11 +129,16 @@ nav ul li i:hover {
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    z-index: 999;
+  }
+
+  button i {
+    font-size: 28px;
   }
 }
 
 @media only screen and (min-width: 601px) {
-  nav button {
+  .responsive-button {
     display: none;
   }
 }

@@ -22,7 +22,7 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
-  height: 100vh;
+  height: 100vh; /* Adjust height as needed */
 }
 
 nav ul {
@@ -87,8 +87,64 @@ nav ul li i:hover {
   font-size: clamp(2rem, 2.5vw, 2.5rem);
 }
 
+/* OFFCANVAS CODE */
+.btn-close {
+  background-color: #fff;
+}
+
+.offcanvas {
+  background-color: #18181b;
+}
+
+.offcanvas-body {
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+}
+
+.offcanvas-body i {
+  padding: 25px;
+  font-size: 25px;
+}
+
+.offcanvas-body a {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+/* OFFCANVAS CODE  */
+
 @media only screen and (max-width: 600px) {
-  nav {
+  nav ul {
+    display: none;
+  }
+
+  nav i {
+    font-size: 25px;
+    margin: 30px 0px 0px 30px;
+  }
+
+  .responsive-button {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    z-index: 999;
+  }
+
+  button i {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .responsive-button {
     display: none;
   }
 }
