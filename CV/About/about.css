@@ -9,13 +9,11 @@
 
 body {
   background-color: #18181b;
-  height: 95vh;
-
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  height: 90vh;
 }
 
 nav {
@@ -57,10 +55,18 @@ nav ul li i:hover {
   height: 500px;
   margin-bottom: 40px;
   font-size: clamp(0.7rem, 2.5vw, 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-container h3 {
   margin-bottom: 35px;
+}
+
+.about-container p {
+  display: flex;
+  text-align: center;
 }
 
 .skills-container {
@@ -114,7 +120,7 @@ nav ul li i:hover {
 }
 /* OFFCANVAS CODE  */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1050px) {
   nav ul {
     display: none;
   }
@@ -143,8 +149,15 @@ nav ul li i:hover {
   }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 1050px) {
   .responsive-button {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }

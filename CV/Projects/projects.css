@@ -9,13 +9,11 @@
 
 body {
   background-color: #18181b;
-  height: 95vh;
-
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  height: 90vh;
 }
 
 nav {
@@ -129,7 +127,7 @@ h1 {
 
 /* OFFCANVAS CODE  */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   nav ul {
     display: none;
   }
@@ -158,8 +156,32 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
   .responsive-button {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .project-item {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 300px;
+  }
+
+  .project-text {
+    display: flex;
+    text-align: center;
+    margin-right: 0px;
+  }
+
+  .image-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+  .project-item img {
+    width: 200px;
   }
 }
